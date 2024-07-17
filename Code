@@ -1,0 +1,24 @@
+mintNFT(name,religion,gender,age,height) {
+    const obj_nft = {
+        "Name" :name,
+        "Religion":religion,
+        "Gender":gender,
+        "Age":age,
+        "Height":height,
+    }
+    arr.push(obj_nft);
+    console.log("Name : "+name);
+}
+
+// create a "loop" that will go through an "array" of NFT's
+// and print their metadata with console.log()
+function listNFTs() {
+    for(let i=0;i<arr.length;i++){
+        console.log("\nNFt ID :"+(i+1));
+        console.log("Name-> "+arr[i].Name);
+        console.log("Religion-> "+arr[i].Religion);
+        console.log("Gender-> "+arr[i].Gender);
+        console.log("Age-> "+arr[i].Age);
+        console.log("Height->"+arr[i].Height);
+    }
+}
